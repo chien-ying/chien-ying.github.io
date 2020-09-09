@@ -704,11 +704,12 @@ fieldset {
 }
 
 #success p {
-    color: #425BB5;
+    /* color: #425BB5; */
+    color: #0dce27f3;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid #425BB5;
+    border: 2px solid #0dce27f3;
     margin-top: 10px;
 }
 

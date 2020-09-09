@@ -143,9 +143,21 @@ $(document).ready(function () {
                 $(form).ajaxSubmit({
                     type: "POST",
                     data: $(form).serialize(),
-                    url: "process.php",
+                    url: "https://formspree.io/xqkyvwvk",
+                    // success: function () {
+                    //     $('#contact :input').attr('disabled', 'disabled');
+                    //     $('#contact').fadeTo("slow", 1, function () {
+                    //         $(this).find(':input').attr('disabled', 'disabled');
+                    //         $(this).find('label').css('cursor', 'default');
+                    //         $('#success').fadeIn();
+                    //     });
+                    // },
+                    // error: function () {
+                    //     $('#contact').fadeTo("slow", 1, function () {
+                    //         $('#error').fadeIn();
+                    //     });
+                    // }
                     success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
                         $('#contact').fadeTo("slow", 1, function () {
                             $(this).find(':input').attr('disabled', 'disabled');
                             $(this).find('label').css('cursor', 'default');
@@ -154,7 +166,9 @@ $(document).ready(function () {
                     },
                     error: function () {
                         $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#success').fadeIn();
                         });
                     }
                 });
