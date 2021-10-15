@@ -104,8 +104,11 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
-
+    for (var i = 0; i < 10; i++) {
+        $("#demo" + i).animatedModal({
+            modalTarget:"animatedModal" + i,
+        });
+    }
     // Contact Form 	
 
     // validate contact form
