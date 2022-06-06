@@ -312,6 +312,81 @@ a.active {
     margin: 0 auto;
 }
 
+#aboutbtn {
+    /* background-color: #9ad3f3; */
+    border: 2px solid #425BB5;
+    color: #425BB5;
+    padding: 10px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#all-skill {
+    display: flex;
+}
+
+.page-wrap {
+    /* padding: 2em; */
+    /* background-color: #fff; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skill-bar-container {
+    position: relative;
+    width: 98%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-bottom: 1.5em;
+}
+.skill-bar-container .skill-bar {
+    display: block;
+    border-radius: 4px;
+    height: 25px;
+}
+.skill-bar-container .skill-bar.level20 {
+    width: 20%;
+    background-color: #d7edfa;
+}
+.skill-bar-container .skill-bar.level40 {
+    width: 40%;
+    background-color: #c8e7f8;
+}
+.skill-bar-container .skill-bar.level60 {
+    width: 60%;
+    background-color: #b9e0f7;
+}
+.skill-bar-container .skill-bar.level70 {
+    width: 70%;
+    background-color: #a9d9f5;
+}
+.skill-bar-container .skill-bar.level80 {
+    width: 80%;
+    background-color: #a9d9f5;
+}
+.skill-bar-container .skill-bar.level90 {
+    width: 90%;
+    background-color: #9ad3f3;
+}
+.skill-bar-container .skill-bar.level100 {
+    width: 100%;
+    background-color: #9ad3f3;
+}
+.skill-bar-container .skill-name {
+    position: absolute;
+    /* top: 5px; */
+    left: 10px;
+    color: #333;
+}
+.skill-bar-container .skill-percent {
+    position: absolute;
+    /* top: 5px; */
+    right: 10px;
+    color: #999;
+}
 
 
 /* experience section
@@ -319,7 +394,6 @@ a.active {
 
 #experience {
     padding: 100px 0;
-    background: #f3f3f3
 }
 
 .experience-row {
@@ -443,6 +517,7 @@ a.active {
 ==================================================*/
 #projects {
     padding: 100px 0;
+    background: #f3f3f3
 }
 
 .portfolio .categories-grid span {
