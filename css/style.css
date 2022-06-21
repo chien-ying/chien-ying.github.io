@@ -312,23 +312,28 @@ a.active {
     margin: 0 auto;
 }
 
-#aboutbtn {
+.about-btn {
     /* background-color: #9ad3f3; */
     border: 2px solid #425BB5;
     color: #425BB5;
-    padding: 10px 40px;
+    padding: 1rem;
     border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    width: 100%;
+    /* width: 100%; */
 }
 
-#all-skill {
+.about-btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar-div {
     display: flex;
 }
 
-.page-wrap {
+.skill-bar-wrap {
     /* padding: 2em; */
     /* background-color: #fff; */
     width: 50%;
@@ -377,15 +382,11 @@ a.active {
 }
 .skill-bar-container .skill-name {
     position: absolute;
-    /* top: 5px; */
     left: 10px;
-    color: #333;
 }
 .skill-bar-container .skill-percent {
     position: absolute;
-    /* top: 5px; */
     right: 10px;
-    color: #999;
 }
 
 
